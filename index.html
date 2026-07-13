@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajay Garg — Enterprise AI, Digital Transformation & Innovation Leader</title>
+  <meta name="description" content="Ajay Garg — Enterprise AI, Digital Transformation & Innovation Leader with 14+ years driving business transformation through AI, Generative AI, Agentic AI & Enterprise Consulting. EY | Morgan Stanley | DPU." />
+  <meta name="author" content="Ajay Garg" />
+  <meta name="keywords" content="Ajay Garg, Enterprise AI, Generative AI, Agentic AI, Digital Transformation, Innovation Leader, EY, Morgan Stanley, AI Strategy, Patent Holder, Financial Services AI, Certifications" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ajay Garg — Enterprise AI & Innovation Leader" />
+  <meta property="og:description" content="14+ years driving business transformation through AI, Generative AI, Agentic AI & Enterprise Consulting. Multiple Patent Holder · Published Author · 6 AI & Agile Certifications · EY | Morgan Stanley." />
+  <meta property="og:image" content="assets/ajay.jpg" />
+  <meta name="theme-color" content="#F8F6F3" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🧠</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500;0,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ GRAIN / NOISE OVERLAY ============ -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ ANIMATED BACKGROUND MESH ============ -->
+  <div class="bg-mesh" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__name">
+        <span>A</span><span>j</span><span>a</span><span>y</span>
+        <span class="preloader__space">&nbsp;</span>
+        <span>G</span><span>a</span><span>r</span><span>g</span>
+      </div>
+      <div class="preloader__meta">
+        <span class="preloader__role">Enterprise AI & Innovation Leader</span>
+        <span class="preloader__count" id="preloaderCount">0</span>
+      </div>
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand" data-cursor="home" aria-label="Ajay Garg — home">
+        <span class="nav__mark">AG</span>
+        <span class="nav__brandtext">Ajay Garg</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" class="nav__link"><span>About</span></a>
+        <a href="#expertise" class="nav__link"><span>AI Expertise</span></a>
+        <a href="#work" class="nav__link"><span>Work</span></a>
+        <a href="#experience" class="nav__link"><span>Journey</span></a>
+        <a href="#certifications" class="nav__link"><span>Certifications</span></a>
+        <a href="#research" class="nav__link"><span>Research</span></a>
+      </nav>
+
+      <a href="#contact" class="btn btn--sm nav__cta" data-magnetic data-cursor="write">
+        <span>Let's talk</span>
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU OVERLAY ============ -->
+  <div class="menu" id="menu">
+    <div class="menu__bg"></div>
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#about" class="menu__link" data-i="1"><span class="menu__num">01</span> About</a>
+      <a href="#expertise" class="menu__link" data-i="2"><span class="menu__num">02</span> AI Expertise</a>
+      <a href="#work" class="menu__link" data-i="3"><span class="menu__num">03</span> Work</a>
+      <a href="#experience" class="menu__link" data-i="4"><span class="menu__num">04</span> Journey</a>
+      <a href="#certifications" class="menu__link" data-i="5"><span class="menu__num">05</span> Certifications</a>
+      <a href="#research" class="menu__link" data-i="6"><span class="menu__num">06</span> Research</a>
+      <a href="#contact" class="menu__link" data-i="7"><span class="menu__num">07</span> Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="https://www.linkedin.com/in/ajaygarg2006" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ajaygarg2006" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/ajaygarg2006" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__eyebrow reveal" data-reveal>
+            <span class="pulse"></span>
+            Enterprise AI Leader · EY · Pune, India
+          </div>
+
+          <h1 class="hero__title" data-splittext>Ajay Garg</h1>
+
+          <p class="hero__role reveal" data-reveal data-delay="1">
+            Enterprise AI, Digital Transformation <span class="amp">&amp;</span> Innovation Leader
+          </p>
+
+          <p class="hero__lead reveal" data-reveal data-delay="2">
+            I drive <em>AI initiatives</em> by researching emerging trends in
+            <em>Generative AI, Agentic AI</em> &amp; intelligent automation — exploring
+            creative ideas to implement AI across <em>Financial Services</em>,
+            translating them into scalable solutions that create
+            measurable impact for global enterprises.
+          </p>
+
+          <div class="hero__actions reveal" data-reveal data-delay="3">
+            <a href="#expertise" class="btn btn--primary" data-magnetic data-cursor="view">
+              <span>Explore AI expertise</span>
+              <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-magnetic data-cursor="write">
+              <span>Get in touch</span>
+            </a>
+          </div>
+
+          <div class="hero__stats reveal" data-reveal data-delay="4">
+            <div class="hero__stat">
+              <span class="hero__statnum" data-count="14" data-suffix="+">0</span>
+              <span class="hero__statlabel">Years transforming enterprises</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__statnum" data-count="6" data-suffix="">0</span>
+              <span class="hero__statlabel">AI & Agile certifications</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__statnum" data-count="4" data-suffix="">0</span>
+              <span class="hero__statlabel">Patents held</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-reveal data-delay="2">
+          <div class="portrait" data-tilt>
+            <div class="portrait__glow"></div>
+            <div class="portrait__frame">
+              <img src="assets/ajay.jpg" alt="Ajay Garg — Enterprise AI & Innovation Leader" class="portrait__img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="portrait__monogram" style="display:none;">
+                <span>AG</span>
+              </div>
+            </div>
+            <div class="portrait__badge portrait__badge--tl">
+              <strong>EY · Manager</strong><small>Enterprise AI & Consulting</small>
+            </div>
+            <div class="portrait__badge portrait__badge--br">
+              <strong>Patent Holder</strong><small>AI Innovation Champion</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span>Scroll</span>
+        <span class="hero__scrollline"></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Enterprise AI</span><i>✦</i><span>Generative AI</span><i>✦</i>
+        <span>Agentic AI</span><i>✦</i><span>AI Strategy</span><i>✦</i>
+        <span>Digital Transformation</span><i>✦</i><span>Financial Services AI</span><i>✦</i>
+        <span>Intelligent Automation</span><i>✦</i><span>AI Governance</span><i>✦</i>
+        <span>Patent Holder</span><i>✦</i><span>EY</span><i>✦</i>
+        <span>Morgan Stanley</span><i>✦</i><span>PSM I</span><i>✦</i><span>CSM®</span><i>✦</i>
+        <span>Enterprise AI</span><i>✦</i><span>Generative AI</span><i>✦</i>
+        <span>Agentic AI</span><i>✦</i><span>AI Strategy</span><i>✦</i>
+        <span>Digital Transformation</span><i>✦</i><span>Financial Services AI</span><i>✦</i>
+        <span>Intelligent Automation</span><i>✦</i><span>AI Governance</span><i>✦</i>
+        <span>Patent Holder</span><i>✦</i><span>EY</span><i>✦</i>
+        <span>Morgan Stanley</span><i>✦</i><span>DeepLearning.AI</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">01 — About</span>
+          <h2 class="section__title reveal" data-reveal>
+            Building <em>AI-first</em> organizations<br />that create measurable impact.
+          </h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__lead reveal" data-reveal>
+            <p>
+              I'm <strong>Ajay Garg</strong>, an <strong>Enterprise AI, Digital Transformation,
+              and Innovation Leader</strong> with <strong>14+ years</strong> of experience
+              driving business transformation through <strong>Artificial Intelligence,
+              Generative AI, Agentic AI, Agile Delivery,</strong> and
+              <strong>Enterprise Consulting</strong>.
+            </p>
+            <p>
+              A <strong>trusted advisor to business and technology leaders</strong>, with a
+              proven track record of leading cross-functional teams, delivering large-scale
+              transformation programs, and fostering a culture of innovation, collaboration,
+              and continuous improvement across <strong>global enterprises</strong>.
+              Experienced in bridging strategy with execution across <strong>Financial Services,
+              Technology, Startups, Academia, and Research</strong>.
+            </p>
+            <p>
+              <strong>Multiple Patent Holder, Published Author, Innovation Champion,</strong>
+              and lifelong learner committed to advancing <strong>responsible AI, intelligent
+              automation, and future-ready enterprises</strong>. I believe innovation is not
+              just about adopting technology — it's about <em>empowering people, solving
+              meaningful problems, and creating sustainable value</em>.
+            </p>
+          </div>
+
+          <ul class="about__facts">
+            <li class="reveal" data-reveal data-delay="1">
+              <span class="about__facticon">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>Enterprise AI Leader</strong><small>Generative AI · Agentic AI · AI Strategy</small></div>
+            </li>
+            <li class="reveal" data-reveal data-delay="2">
+              <span class="about__facticon">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>EY (Ernst & Young)</strong><small>Manager · Enterprise Consulting</small></div>
+            </li>
+            <li class="reveal" data-reveal data-delay="3">
+              <span class="about__facticon">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 17l5-5 4 4 8-8" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 8h5v5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>Morgan Stanley</strong><small>Sr. Program Manager · Financial Services</small></div>
+            </li>
+            <li class="reveal" data-reveal data-delay="4">
+              <span class="about__facticon">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3L2 9l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>Dr. D. Y. Patil Vidyapeeth</strong><small>BE, Information Technology</small></div>
+            </li>
+            <li class="reveal" data-reveal data-delay="5">
+              <span class="about__facticon">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>Multiple Patent Holder</strong><small>Published Author · Innovation Champion</small></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI EXPERTISE ============ -->
+    <section class="section expertise" id="expertise">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02 — AI Expertise</span>
+          <h2 class="section__title reveal" data-reveal>Shaping the future with <em>AI</em>.</h2>
+          <p class="section__sub reveal" data-reveal data-delay="1">
+            From AI strategy &amp; governance to hands-on Generative AI and Agentic AI — building
+            intelligent solutions for financial services and global enterprises.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" data-reveal data-tilt data-cursor="pull">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Enterprise AI Strategy</h3>
+            <p>Architecting AI-first roadmaps for organizations — from ideation to implementation, ensuring AI investments deliver real business value and competitive advantage.</p>
+            <span class="card__no">01</span>
+          </article>
+
+          <article class="card reveal" data-reveal data-delay="1" data-tilt data-cursor="pull">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Generative AI &amp; LLMs</h3>
+            <p>Leveraging large language models, prompt engineering, and generative AI to build creative, intelligent solutions — from content generation to complex reasoning systems.</p>
+            <span class="card__no">02</span>
+          </article>
+
+          <article class="card reveal" data-reveal data-delay="2" data-tilt data-cursor="pull">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5L19 19M19 5l-2.5 2.5M7.5 16.5L5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Agentic AI Systems</h3>
+            <p>Designing autonomous AI agents that reason, plan, and act — building multi-agent workflows that solve complex enterprise problems with minimal human intervention.</p>
+            <span class="card__no">03</span>
+          </article>
+
+          <article class="card reveal" data-reveal data-tilt data-cursor="pull">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>AI for Financial Services</h3>
+            <p>Applying AI and intelligent automation to transform banking, capital markets, and financial operations — driving efficiency, compliance, and smarter decision-making.</p>
+            <span class="card__no">04</span>
+          </article>
+
+          <article class="card reveal" data-reveal data-delay="1" data-tilt data-cursor="pull">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>AI Governance &amp; Responsible AI</h3>
+            <p>Establishing frameworks for ethical AI deployment — ensuring fairness, transparency, accountability, and regulatory compliance across AI systems at scale.</p>
+            <span class="card__no">05</span>
+          </article>
+
+          <article class="card reveal" data-reveal data-delay="2" data-tilt data-cursor="pull">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Digital Transformation &amp; Automation</h3>
+            <p>End-to-end digital transformation — modernizing legacy systems, implementing intelligent automation, and building future-ready enterprises that scale with technology.</p>
+            <span class="card__no">06</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK / PROJECTS ============ -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03 — Selected Work</span>
+          <h2 class="section__title reveal" data-reveal>Things I've <em>built</em> &amp; shipped.</h2>
+          <p class="section__sub reveal" data-reveal data-delay="1">
+            Real products where AI innovation meets hands-on craft.
+          </p>
+        </div>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project reveal" data-reveal data-cursor="open">
+            <a href="https://github.com/ajaygarg2006/wellnessedge" target="_blank" rel="noopener" class="project__link" aria-label="Open Wellness Edge Clinic project"></a>
+            <div class="project__media project__media--health">
+              <div class="project__art">
+                <svg viewBox="0 0 24 24" width="46" height="46"><path d="M12 21s-7-4.35-7-10a7 7 0 0114 0c0 5.65-7 10-7 10z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/><path d="M7.5 11h2l1.5-2.5L13 14l1.5-3h2" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="project__tagline">Health-tech · AI</span>
+            </div>
+            <div class="project__body">
+              <div class="project__top">
+                <span class="project__cat">Health-tech · AI</span>
+                <span class="project__year">2026</span>
+              </div>
+              <h3 class="project__title">Wellness Edge Clinic</h3>
+              <p class="project__desc">
+                A conversion-focused website for a Pune cardiology clinic — featuring an
+                <strong>AI Heart Health Check</strong> powered by Groq LLM with graceful fallback,
+                backend-free appointment booking, video testimonials, lightbox gallery
+                and buttery scroll animations.
+              </p>
+              <div class="project__tags">
+                <span>AI / LLM</span><span>Groq</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+              </div>
+              <span class="project__cta">Open project
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reveal" data-reveal data-delay="1" data-cursor="open">
+            <a href="https://github.com/ajaygarg2006/letsskillindia" target="_blank" rel="noopener" class="project__link" aria-label="Open Lets Skill India Foundation project"></a>
+            <div class="project__media project__media--edu">
+              <div class="project__art">
+                <svg viewBox="0 0 24 24" width="46" height="46"><path d="M12 4L2 9l10 5 8-4v6" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 11.5V16c0 1.1 2.7 2.5 6 2.5s6-1.4 6-2.5v-4.5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="project__tagline">Ed-tech · Social impact</span>
+            </div>
+            <div class="project__body">
+              <div class="project__top">
+                <span class="project__cat">Social impact</span>
+                <span class="project__year">2026</span>
+              </div>
+              <h3 class="project__title">Lets Skill India Foundation</h3>
+              <p class="project__desc">
+                A clean, responsive web presence for a skill-development foundation on a
+                mission to make people job-ready — home, about, initiatives and contact,
+                built as a fast, maintainable static site.
+              </p>
+              <div class="project__tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Static site</span>
+              </div>
+              <span class="project__cta">Open project
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project reveal" data-reveal data-delay="2" data-cursor="open">
+            <a href="https://github.com/ajaygarg2006/whatsappbulk" target="_blank" rel="noopener" class="project__link" aria-label="Open WhatsApp Bulk Sending Framework project"></a>
+            <div class="project__media project__media--auto">
+              <div class="project__art">
+                <svg viewBox="0 0 24 24" width="46" height="46"><path d="M4 5h16v10H8l-4 4z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              </div>
+              <span class="project__tagline">Automation · Framework</span>
+            </div>
+            <div class="project__body">
+              <div class="project__top">
+                <span class="project__cat">Intelligent Automation</span>
+                <span class="project__year">Framework</span>
+              </div>
+              <h3 class="project__title">WhatsApp Bulk Framework</h3>
+              <p class="project__desc">
+                An open-source framework for programmatic bulk WhatsApp messaging —
+                exploring automation patterns, messaging workflows, and developer ergonomics
+                for communication at scale.
+              </p>
+              <div class="project__tags">
+                <span>Automation</span><span>Messaging</span><span>Open source</span>
+              </div>
+              <span class="project__cta">Open project
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="work__more reveal" data-reveal>
+          <a href="https://github.com/ajaygarg2006" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic data-cursor="open">
+            <span>See more on GitHub</span>
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE / JOURNEY ============ -->
+    <section class="section journey" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04 — Journey</span>
+          <h2 class="section__title reveal" data-reveal>The <em>career</em> so far.</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- EY - Manager -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Oct 2023 — Present · 2 yrs 10 mos</div>
+            <div class="timeline__content">
+              <h3>Manager — Enterprise Consulting &amp; AI Transformation</h3>
+              <span class="timeline__org">EY (Ernst & Young) · Pune, India · On-site</span>
+              <p>Leading strategic consulting and enterprise transformation initiatives —
+                driving AI adoption, researching Generative AI &amp; Agentic AI trends,
+                and exploring creative AI solutions for the Financial Services sector.
+                Spearheading AI initiatives that translate emerging technologies into
+                measurable business impact.</p>
+            </div>
+          </div>
+
+          <!-- Morgan Stanley -->
+          <div class="timeline__item reveal" data-reveal data-delay="1">
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Oct 2022 — Jan 2026 · 3 yrs 4 mos</div>
+            <div class="timeline__content">
+              <h3>Senior Program Manager</h3>
+              <span class="timeline__org">Morgan Stanley · Mumbai, India · Hybrid</span>
+              <p>Managed complex technology programs across capital markets and financial
+                services — driving agile delivery, cross-functional alignment, and
+                technology modernization at one of the world's leading financial institutions.
+                Bridged business strategy with execution across 15+ skill domains.</p>
+            </div>
+          </div>
+
+          <!-- EY - Senior Consultant -->
+          <div class="timeline__item reveal" data-reveal data-delay="2">
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Aug 2022 — Oct 2023 · 1 yr 3 mos</div>
+            <div class="timeline__content">
+              <h3>Senior Consultant</h3>
+              <span class="timeline__org">EY (Ernst & Young) · Pune, India</span>
+              <p>Delivered consulting engagements for global Financial Services clients —
+                specializing in business analysis, agile delivery, and technology-driven
+                transformation programs that created measurable business outcomes.</p>
+            </div>
+          </div>
+
+          <!-- Ed-Tech Startup -->
+          <div class="timeline__item reveal" data-reveal data-delay="3">
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">May 2021 — Jul 2022 · 1 yr 3 mos</div>
+            <div class="timeline__content">
+              <h3>Startup Founder — Music Education Platform</h3>
+              <span class="timeline__org">Ed-Tech Startup · India · Full-time</span>
+              <p>Built and scaled a startup in music education — an Ed-Tech platform
+                leveraging technology to democratize learning. Hands-on experience with
+                product development, retrospectives, and startup operations.</p>
+            </div>
+          </div>
+
+          <!-- Honey Bee Network -->
+          <div class="timeline__item reveal" data-reveal data-delay="4">
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Oct 2008 — Present · 17 yrs</div>
+            <div class="timeline__content">
+              <h3>Volunteer — Innovation Advocate</h3>
+              <span class="timeline__org">Honey Bee Network</span>
+              <p>A crucible of like-minded individuals, innovators, and changemakers.
+                Contributing to grassroots innovation, knowledge sharing, and building
+                a community that empowers inventors and creative problem-solvers across India.</p>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline__item reveal" data-reveal data-delay="5">
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">2008 — 2012</div>
+            <div class="timeline__content">
+              <h3>Bachelor of Engineering — Information Technology</h3>
+              <span class="timeline__org">Dr. D. Y. Patil Vidyapeeth · Pune</span>
+              <p>Built the technical foundation in Information Technology — rigorous
+                engineering thinking, problem-solving, and a strong base in software
+                development that underpins everything from AI innovation to enterprise consulting.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" data-reveal data-delay="6">
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">2001 — 2004</div>
+            <div class="timeline__content">
+              <h3>10th Standard</h3>
+              <span class="timeline__org">Godavari Hindi School</span>
+              <p>Where the journey began — building the foundational discipline,
+                curiosity, and learning habits that continue to drive lifelong growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="skills">
+          <h3 class="skills__title reveal" data-reveal>AI &amp; technology toolkit</h3>
+          <div class="skills__grid">
+            <span class="chip reveal" data-reveal>Enterprise AI</span>
+            <span class="chip reveal" data-reveal>Generative AI</span>
+            <span class="chip reveal" data-reveal>Agentic AI</span>
+            <span class="chip reveal" data-reveal>AI Strategy</span>
+            <span class="chip reveal" data-reveal>AI Governance</span>
+            <span class="chip reveal" data-reveal>LLM / GPT</span>
+            <span class="chip reveal" data-reveal>Prompt Engineering</span>
+            <span class="chip reveal" data-reveal>Intelligent Automation</span>
+            <span class="chip reveal" data-reveal>Digital Transformation</span>
+            <span class="chip reveal" data-reveal>Financial Services AI</span>
+            <span class="chip reveal" data-reveal>Agile Leadership</span>
+            <span class="chip reveal" data-reveal>Scrum · Kanban · SAFe</span>
+            <span class="chip reveal" data-reveal>Program Management</span>
+            <span class="chip reveal" data-reveal>Product Innovation</span>
+            <span class="chip reveal" data-reveal>Business Consulting</span>
+            <span class="chip reveal" data-reveal>Emerging Technologies</span>
+            <span class="chip reveal" data-reveal>Stakeholder Management</span>
+            <span class="chip reveal" data-reveal>JIRA · Confluence</span>
+            <span class="chip reveal" data-reveal>HTML · CSS · JS</span>
+            <span class="chip reveal" data-reveal>Responsible AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">05 — Certifications</span>
+          <h2 class="section__title reveal" data-reveal>Credentials that back the <em>expertise</em>.</h2>
+          <p class="section__sub reveal" data-reveal data-delay="1">
+            Continuous learning across AI, agile, and innovation — validated by industry leaders.
+          </p>
+        </div>
+
+        <div class="certs">
+          <div class="cert reveal" data-reveal>
+            <div class="cert__icon cert__icon--ey">
+              <span>EY</span>
+            </div>
+            <div class="cert__body">
+              <h3>EY Innovation - Agile - Bronze Learning</h3>
+              <span class="cert__org">EY</span>
+              <span class="cert__date">Issued Jul 2025</span>
+            </div>
+          </div>
+
+          <div class="cert reveal" data-reveal data-delay="1">
+            <div class="cert__icon cert__icon--ey">
+              <span>EY</span>
+            </div>
+            <div class="cert__body">
+              <h3>EY Artificial Intelligence - Applied AI - Bronze Learning</h3>
+              <span class="cert__org">EY</span>
+              <span class="cert__date">Issued Jul 2025</span>
+            </div>
+          </div>
+
+          <div class="cert reveal" data-reveal data-delay="2">
+            <div class="cert__icon cert__icon--uni">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3L2 9l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="cert__body">
+              <h3>AI, Business &amp; the Future of Work</h3>
+              <span class="cert__org">Lund University</span>
+              <span class="cert__date">Issued Jun 2025 · ID GC2T6JZ1E2HO</span>
+            </div>
+          </div>
+
+          <div class="cert reveal" data-reveal data-delay="3">
+            <div class="cert__icon cert__icon--dl">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="cert__body">
+              <h3>AI For Everyone</h3>
+              <span class="cert__org">DeepLearning.AI</span>
+              <span class="cert__date">Issued Jun 2025 · ID 2FPN385VSJIG</span>
+            </div>
+          </div>
+
+          <div class="cert reveal" data-reveal data-delay="4">
+            <div class="cert__icon cert__icon--scrum">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 12a9 9 0 019-9M21 12a9 9 0 01-9 9" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M12 3l3 3-3 3M12 21l-3-3 3-3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="cert__body">
+              <h3>Professional Scrum Master I (PSM I)</h3>
+              <span class="cert__org">Scrum.org</span>
+              <span class="cert__date">Issued Jan 2025 · ID 1183353</span>
+            </div>
+          </div>
+
+          <div class="cert reveal" data-reveal data-delay="5">
+            <div class="cert__icon cert__icon--scrum">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="cert__body">
+              <h3>Certified ScrumMaster® (CSM®)</h3>
+              <span class="cert__org">Scrum Alliance</span>
+              <span class="cert__date">Issued Jun 2023 — Expires Jun 2025 · ID 1804727</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PATENTS & RESEARCH ============ -->
+    <section class="section research" id="research">
+      <div class="container">
+        <div class="research__card reveal" data-reveal>
+          <div class="research__left">
+            <span class="section__index">06 — Patents &amp; Research</span>
+            <h2 class="research__title">Advancing <em>responsible AI</em> &amp; intelligent automation.</h2>
+            <p class="research__text">
+              A <strong>Multiple Patent Holder</strong> and <strong>Published Author</strong>
+              committed to pushing the boundaries of AI innovation. My research explores
+              how enterprises can harness <strong>Generative AI, Agentic AI</strong>, and
+              intelligent automation to solve real-world problems — from AI-driven
+              financial services optimization to building <strong>future-ready enterprises</strong>.
+              Affiliated with <strong>IGI Global Scientific Publishing</strong>.
+            </p>
+            <div class="research__tags">
+              <span>Enterprise AI</span>
+              <span>Generative AI trends</span>
+              <span>AI in Financial Services</span>
+              <span>Responsible AI</span>
+              <span>Agentic AI systems</span>
+              <span>Intelligent automation</span>
+            </div>
+            <a href="https://www.igi-global.com/affiliate/ajay-garg/496195" target="_blank" rel="noopener" class="btn btn--primary" data-magnetic data-cursor="open">
+              <span>View author profile</span>
+              <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="research__right">
+            <div class="research__badge">
+              <svg viewBox="0 0 24 24" width="30" height="30"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <strong>Multiple<br />Patent Holder</strong>
+            </div>
+            <div class="research__badge">
+              <svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 3l2.5 5 5.5.8-4 3.9 1 5.5L12 21l-5-2.8 1-5.5-4-3.9 5.5-.8z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+              <strong>Published<br />Author</strong>
+            </div>
+            <div class="research__stat">
+              <span>Innovation Champion</span>
+              <small>IGI Global · Honey Bee Network</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__intro">
+            <span class="section__index">07 — Contact</span>
+            <h2 class="contact__title reveal" data-reveal>
+              Let's shape the <em>AI future</em> together.
+            </h2>
+            <p class="contact__text reveal" data-reveal data-delay="1">
+              Have an AI initiative that needs strategic leadership, a digital transformation
+              program that needs momentum, or an innovation idea worth exploring?
+              I'd love to hear about it.
+            </p>
+
+            <div class="contact__socials reveal" data-reveal data-delay="2">
+              <a href="https://www.linkedin.com/in/ajaygarg2006" target="_blank" rel="noopener" class="social" data-cursor="open" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.94 5a2 2 0 11-4 0 2 2 0 014 0zM3.5 8.5h3v12h-3v-12zm5 0h2.9v1.64h.04c.4-.76 1.4-1.56 2.87-1.56 3.07 0 3.64 2.02 3.64 4.65v7.27h-3v-6.44c0-1.54-.03-3.52-2.14-3.52-2.14 0-2.47 1.67-2.47 3.4v6.56h-3v-12z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/ajaygarg2006" target="_blank" rel="noopener" class="social" data-cursor="open" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.instagram.com/ajaygarg2006" target="_blank" rel="noopener" class="social" data-cursor="open" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7" fill="none"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.facebook.com/share/1CSegkGjju/" target="_blank" rel="noopener" class="social" data-cursor="open" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" data-reveal data-delay="1" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <div class="field">
+              <input type="text" name="name" id="cname" required placeholder=" " />
+              <label for="cname">Your name</label>
+            </div>
+            <div class="field">
+              <input type="email" name="email" id="cemail" required placeholder=" " />
+              <label for="cemail">Email address</label>
+            </div>
+            <div class="field">
+              <textarea name="message" id="cmsg" rows="4" required placeholder=" "></textarea>
+              <label for="cmsg">Tell me about your AI initiative</label>
+            </div>
+            <input type="hidden" name="_subject" value="New message from portfolio" />
+            <input type="hidden" name="_template" value="table" />
+            <button type="submit" class="btn btn--primary btn--full" data-magnetic data-cursor="write">
+              <span>Send message</span>
+              <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="contact__or">or connect on
+              <a href="https://www.linkedin.com/in/ajaygarg2006" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#home" class="footer__word" data-cursor="home">Ajay Garg</a>
+        <a href="#contact" class="footer__big" data-magnetic data-cursor="write">
+          Let's talk AI
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Ajay Garg · Enterprise AI & Innovation Leader · EY | Morgan Stanley</span>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/ajaygarg2006" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/ajaygarg2006" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.instagram.com/ajaygarg2006" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/1CSegkGjju/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <span class="footer__made">Crafted with care · Pune, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="totop" id="toTop" aria-label="Back to top" data-cursor="home">
+    <svg viewBox="0 0 16 16" width="16" height="16"><path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
