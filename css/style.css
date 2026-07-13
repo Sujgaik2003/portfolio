@@ -989,10 +989,18 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 
 .project__media {
   position: relative;
-  padding: 48px;
+  padding: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   min-height: 260px;
   overflow: hidden;
+}
+.project__img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .6s var(--ease);
+}
+.project:hover .project__img {
+  transform: scale(1.05);
 }
 .project__media--health {
   background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
