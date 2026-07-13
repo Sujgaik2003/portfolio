@@ -858,7 +858,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .about__lead p {
   font-size: 1.1rem;
   line-height: 1.9;
-  color: var(--text-muted);
+  color: var(--text);
   margin-bottom: 20px;
 }
 .about__lead strong {
@@ -1214,18 +1214,18 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .cert {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 24px 28px;
-  background: var(--bg-card);
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(108,92,231,.06);
-  box-shadow: var(--shadow-sm);
-  transition: transform .35s var(--ease), box-shadow .35s, border-color .35s;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease);
+  text-decoration: none;
+  color: inherit;
 }
-.cert:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md), var(--shadow-glow);
-  border-color: rgba(108,92,231,.12);
+a.cert:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  background: #fff;
 }
 
 .cert__icon {
