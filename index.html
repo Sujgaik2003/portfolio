@@ -13,7 +13,8 @@
   <meta property="og:title" content="Ajay Garg — Enterprise AI & Innovation Leader" />
   <meta property="og:description" content="14+ years driving business transformation through AI, Generative AI, Agentic AI & Enterprise Consulting. Multiple Patent Holder · Published Author · 6 AI & Agile Certifications · EY | Morgan Stanley." />
   <meta property="og:image" content="assets/ajay.jpg" />
-  <meta name="theme-color" content="#F8F6F3" />
+  <meta name="theme-color" content="#0A0A12" />
+  <meta name="color-scheme" content="dark" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="assets/ajay.jpg" />
@@ -24,9 +25,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500;0,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Lucide Icons (Premium modern icons) -->
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -159,21 +157,70 @@
         </div>
 
         <div class="hero__visual reveal" data-reveal data-delay="2">
-          <div class="portrait" data-tilt>
-            <div class="portrait__glow"></div>
-            <div class="portrait__frame">
-              <img src="assets/ajay.jpg" alt="Ajay Garg — Enterprise AI & Innovation Leader" class="portrait__img"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-              <div class="portrait__monogram" style="display:none;">
-                <span>AG</span>
+          <div class="gallery" id="heroGallery" data-tilt aria-roledescription="carousel" aria-label="Career gallery">
+            <div class="gallery__glow"></div>
+            <div class="gallery__frame">
+              <div class="gallery__stack">
+                <figure class="gallery__slide is-active" data-slide style="background-image:url('assets/gallery/keynote-genai.jpg')">
+                  <img src="assets/gallery/keynote-genai.jpg" alt="Ajay Garg delivering a keynote on Generative AI in banking" loading="eager" />
+                  <figcaption class="gallery__cap">
+                    <span class="gallery__tag">Keynote</span>
+                    <span class="gallery__caption">Generative AI in Banking</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery__slide" data-slide style="background-image:url('assets/gallery/kalam-meeting.jpg')">
+                  <img src="assets/gallery/kalam-meeting.jpg" alt="Ajay Garg meeting Dr. A.P.J. Abdul Kalam" loading="lazy" />
+                  <figcaption class="gallery__cap">
+                    <span class="gallery__tag">Recognition</span>
+                    <span class="gallery__caption">Meeting Dr. A.P.J. Abdul Kalam</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery__slide" data-slide style="background-image:url('assets/gallery/kalam-interview.jpg')">
+                  <img src="assets/gallery/kalam-interview.jpg" alt="Ajay Garg in conversation with Dr. A.P.J. Abdul Kalam" loading="lazy" />
+                  <figcaption class="gallery__cap">
+                    <span class="gallery__tag">In Conversation</span>
+                    <span class="gallery__caption">Dr. A.P.J. Abdul Kalam · Former President of India</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery__slide" data-slide style="background-image:url('assets/gallery/kalam-standing.jpg')">
+                  <img src="assets/gallery/kalam-standing.jpg" alt="Ajay Garg with Dr. A.P.J. Abdul Kalam" loading="lazy" />
+                  <figcaption class="gallery__cap">
+                    <span class="gallery__tag">Inspiration</span>
+                    <span class="gallery__caption">With Dr. A.P.J. Abdul Kalam</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery__slide" data-slide style="background-image:url('assets/gallery/honeybee.jpg')">
+                  <img src="assets/gallery/honeybee.jpg" alt="Ajay Garg championing grassroots innovation with the Honey Bee Network" loading="lazy" />
+                  <figcaption class="gallery__cap">
+                    <span class="gallery__tag">Honey Bee Network</span>
+                    <span class="gallery__caption">Championing Grassroots Innovation</span>
+                  </figcaption>
+                </figure>
               </div>
+
+              <button class="gallery__nav gallery__nav--prev" id="galleryPrev" aria-label="Previous photo">
+                <svg viewBox="0 0 16 16" width="16" height="16"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="gallery__nav gallery__nav--next" id="galleryNext" aria-label="Next photo">
+                <svg viewBox="0 0 16 16" width="16" height="16"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+
+              <div class="gallery__progress" aria-hidden="true"><span id="galleryBar"></span></div>
             </div>
-            <div class="portrait__badge portrait__badge--tl">
-              <strong>EY · Manager</strong><small>Enterprise AI & Consulting</small>
-            </div>
-            <div class="portrait__badge portrait__badge--br">
-              <strong>Patent Holder</strong><small>AI Innovation Champion</small>
-            </div>
+
+            <div class="gallery__dots" id="galleryDots" role="tablist" aria-label="Choose photo"></div>
+          </div>
+
+          <div class="hero__quicklinks reveal" data-reveal data-delay="3" aria-label="Jump to section">
+            <a href="#work" class="hero__quick" data-cursor="view">
+              <i data-lucide="folder-git-2" stroke-width="1.6"></i><span>Selected Work</span>
+            </a>
+            <a href="#experience" class="hero__quick" data-cursor="view">
+              <i data-lucide="route" stroke-width="1.6"></i><span>Career Journey</span>
+            </a>
+            <a href="#research" class="hero__quick" data-cursor="view">
+              <i data-lucide="award" stroke-width="1.6"></i><span>Patents &amp; Research</span>
+            </a>
           </div>
         </div>
       </div>
@@ -357,11 +404,12 @@
 
         <div class="projects">
           <!-- Project 1 -->
-          <article class="project reveal" data-reveal data-cursor="open">
-            <a href="#" class="project__link" aria-label="Open National Innovation Portal project"></a>
-            <div class="project__media project__media--health">
-              <img src="assets/project-innovation.png" alt="National Innovation Portal" class="project__img" />
-              <span class="project__tagline">Innovation · Government</span>
+          <article class="project reveal" data-reveal>
+            <div class="project__media cover cover--indigo">
+              <div class="cover__art"><i data-lucide="lightbulb" stroke-width="1.4"></i></div>
+              <span class="cover__kicker">Innovation · Government</span>
+              <h3 class="cover__title">National Innovation Portal</h3>
+              <span class="cover__meta">2010 — 2011</span>
             </div>
             <div class="project__body">
               <div class="project__top">
@@ -375,18 +423,18 @@
               <div class="project__tags">
                 <span>Innovation</span><span>Platform</span><span>Government</span>
               </div>
-              <span class="project__cta">Open project
-                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <span class="project__cta project__cta--static">Associated with Padmashree Dr D. Y. Patil Vidyapeeth</span>
             </div>
           </article>
 
           <!-- Project 2 -->
           <article class="project reveal" data-reveal data-delay="1" data-cursor="open">
-            <a href="https://fontprocessor.blogspot.com/" target="_blank" rel="noopener" class="project__link" aria-label="Open Font Processor project"></a>
-            <div class="project__media project__media--edu">
-              <img src="assets/project-font.png" alt="Font Processor" class="project__img" />
-              <span class="project__tagline">Desktop Tool · Typography</span>
+            <a href="https://digitalknowledgecentre.in/listings/font-processor/" target="_blank" rel="noopener" class="project__link" aria-label="Open Font Processor project"></a>
+            <div class="project__media cover cover--teal">
+              <div class="cover__art"><i data-lucide="languages" stroke-width="1.4"></i></div>
+              <span class="cover__kicker">Desktop Tool · Typography</span>
+              <h3 class="cover__title">Font Processor</h3>
+              <span class="cover__meta">2006 — 2008</span>
             </div>
             <div class="project__body">
               <div class="project__top">
@@ -398,7 +446,7 @@
                 A software tool designed to resolve key mapping issues for Devanagari (Hindi/Marathi) scripts. Compatible with virtually every Hindi/Marathi font being used, with features for conversion to English fonts to simplify multilingual typography.
               </p>
               <div class="project__tags">
-                <span>Java</span><span>Font</span><span>Processing</span><span>Localization</span>
+                <span>Localization</span><span>Font</span><span>Processing</span><span>Devanagari</span>
               </div>
               <span class="project__cta">Open project
                 <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -408,10 +456,12 @@
 
           <!-- Project 3 -->
           <article class="project reveal" data-reveal data-delay="2" data-cursor="open">
-            <a href="#" class="project__link" aria-label="Open e-University project"></a>
-            <div class="project__media project__media--auto">
-              <img src="assets/project-university.png" alt="e-University" class="project__img" />
-              <span class="project__tagline">Ed-tech · Platform</span>
+            <a href="https://library.iated.org/view/KUMARGARG2011DIG" target="_blank" rel="noopener" class="project__link" aria-label="Open e-University publication"></a>
+            <div class="project__media cover cover--gold">
+              <div class="cover__art"><i data-lucide="graduation-cap" stroke-width="1.4"></i></div>
+              <span class="cover__kicker">Ed-tech · Platform</span>
+              <h3 class="cover__title">e-University</h3>
+              <span class="cover__meta">2007 — 2008</span>
             </div>
             <div class="project__body">
               <div class="project__top">
@@ -425,7 +475,7 @@
               <div class="project__tags">
                 <span>Ed-tech</span><span>Platform</span><span>Digital University</span>
               </div>
-              <span class="project__cta">Open project
+              <span class="project__cta">Read publication
                 <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
             </div>
@@ -447,88 +497,187 @@
         <div class="section__head">
           <span class="section__index">04 — Journey</span>
           <h2 class="section__title reveal" data-reveal>The <em>career</em> so far.</h2>
+          <p class="section__sub reveal" data-reveal data-delay="1">
+            14+ years across Financial Services, technology, startups, academia &amp; research —
+            with a parallel track of learning that started it all.
+          </p>
+        </div>
+
+        <div class="journey__label reveal" data-reveal>
+          <span class="journey__labelicon"><i data-lucide="briefcase" stroke-width="1.6"></i></span>
+          <h3>Professional Experience</h3>
         </div>
 
         <div class="timeline">
+          <!-- Book Author -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Sep 2025 — Present</div>
+            <div class="timeline__content">
+              <h3>Book Author</h3>
+              <span class="timeline__org">IGI Global Scientific Publishing</span>
+              <p><em>Transforming Education with Data Science in the AI Era</em> — a globally-contributed volume on how AI and data science are revolutionizing learning, from personalized instruction and adaptive assessment to generative-AI lesson planning, responsible data practices, and blockchain-based credentials.</p>
+            </div>
+          </div>
+
           <!-- EY - Manager -->
           <div class="timeline__item reveal" data-reveal>
             <div class="timeline__marker"></div>
             <div class="timeline__period">Oct 2023 — Present · 2 yrs 10 mos</div>
             <div class="timeline__content">
-              <h3>Manager</h3>
-              <span class="timeline__org">EY (Ernst & Young) · Pune District, Maharashtra, India · On-site</span>
-              <p>Leading strategic consulting and enterprise transformation initiatives for global Financial Services clients, delivering business value across Risk Management, Regulatory Compliance, Business Reconciliation Control Services, Control Testing, and enterprise governance.<br/><br/>
-Building and driving AI-led transformation programs by identifying high-impact use cases for Generative AI, Agentic AI, and Intelligent Automation, enabling scalable, secure, and business-driven AI adoption across FSRM consulting practice.<br/><br/>
-Drove the development of enterprise AI platforms including AML Analytics, Continuous Controls Monitoring (CCM), Control Intelligence, Privacy &amp; Compliance solutions, and AI-powered governance platforms to strengthen risk intelligence, regulatory compliance, and operational efficiency.<br/><br/>
-Established program governance, Agile delivery frameworks, executive stakeholder management, portfolio planning, and risk mitigation practices while successfully leading cross-functional global teams across complex transformation programs.<br/><br/>
-Championed innovation, Design Thinking, Responsible AI, and continuous improvement by mentoring consulting professionals and collaborating with executive leadership to build future-ready, AI-first enterprise organizations.</p>
+              <h3>Manager <span class="timeline__badge">Current</span></h3>
+              <span class="timeline__org">EY (Ernst &amp; Young) · Pune, India · On-site</span>
+              <p>Leading strategic consulting and enterprise transformation for global Financial Services clients across Risk Management, Regulatory Compliance, Reconciliation Control Services, Control Testing, and governance.<br/><br/>
+Driving AI-led transformation by identifying high-impact use cases for Generative AI, Agentic AI, and Intelligent Automation — enabling scalable, secure, business-driven AI adoption across the FSRM practice. Drove enterprise AI platforms including AML Analytics, Continuous Controls Monitoring (CCM), Control Intelligence, and AI-powered governance. Established program governance, Agile delivery, executive stakeholder management, and Responsible AI practices while leading cross-functional global teams.</p>
+            </div>
+          </div>
+
+          <!-- Morgan Stanley -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Oct 2022 — Jan 2026 · 3 yrs 4 mos</div>
+            <div class="timeline__content">
+              <h3>Senior Program Manager</h3>
+              <span class="timeline__org">Morgan Stanley · Mumbai, India · Hybrid</span>
+              <p>Led complex programs for a leading global financial institution — Agile methodologies, business analysis, portfolio planning, and cross-functional delivery across enterprise initiatives.</p>
             </div>
           </div>
 
           <!-- EY - Senior Consultant -->
-          <div class="timeline__item reveal" data-reveal data-delay="1">
+          <div class="timeline__item reveal" data-reveal>
             <div class="timeline__marker"></div>
             <div class="timeline__period">Aug 2022 — Oct 2023 · 1 yr 3 mos</div>
             <div class="timeline__content">
               <h3>Senior Consultant</h3>
-              <span class="timeline__org">EY (Ernst & Young) · Pune District, Maharashtra, India</span>
-              <p>Delivered consulting engagements for global Financial Services clients across Risk Management, Regulatory Compliance, Control Testing, Business Reconciliation Controls, and Governance, Risk &amp; Compliance (GRC).<br/><br/>
-Served as a functional consultant, translating complex business and regulatory requirements into scalable technology solutions while collaborating with business stakeholders, product owners, and engineering teams.<br/><br/>
-Performed business analysis, solution design, process assessment, requirement management, UAT, and Agile delivery to support enterprise transformation programs.<br/><br/>
-Contributed to AI-enabled transformation initiatives by defining business requirements, validating solution capabilities, supporting functional design, and facilitating successful delivery across enterprise engagements.<br/><br/>
-Identified process optimization and automation opportunities to improve operational efficiency and mitigate risk.</p>
+              <span class="timeline__org">EY (Ernst &amp; Young) · Pune, India</span>
+              <p>Delivered consulting engagements across Risk Management, Regulatory Compliance, Control Testing, Reconciliation Controls, and GRC. Served as a functional consultant — translating complex business and regulatory requirements into scalable solutions through business analysis, solution design, UAT, and Agile delivery, contributing to AI-enabled transformation initiatives.</p>
             </div>
           </div>
 
-          <!-- Ed-Tech Startup -->
-          <div class="timeline__item reveal" data-reveal data-delay="3">
+          <!-- Spardha -->
+          <div class="timeline__item reveal" data-reveal>
             <div class="timeline__marker"></div>
             <div class="timeline__period">May 2021 — Jul 2022 · 1 yr 3 mos</div>
             <div class="timeline__content">
-              <h3>Startup Founder — Music Education Platform</h3>
-              <span class="timeline__org">Ed-Tech Startup · India · Full-time</span>
-              <p>Built and scaled a startup in music education — an Ed-Tech platform
-                leveraging technology to democratize learning. Hands-on experience with
-                product development, retrospectives, and startup operations.</p>
+              <h3>Program Manager — India</h3>
+              <span class="timeline__org">Spardha Learnings Pvt. Ltd. · Music Education (Ed-Tech)</span>
+              <p>Led the India market for a music-education Ed-Tech startup — managing Sales, Success, and Operations for overall growth, and translating user requirements and feedback into development tasks (JIRA stories) for the tech platform.</p>
             </div>
           </div>
 
-          <!-- Honey Bee Network -->
-          <div class="timeline__item reveal" data-reveal data-delay="4">
+          <!-- IIT Bombay -->
+          <div class="timeline__item reveal" data-reveal>
             <div class="timeline__marker"></div>
-            <div class="timeline__period">Oct 2008 — Present · 17 yrs</div>
+            <div class="timeline__period">Sep 2020 — Apr 2021 · 8 mos</div>
+            <div class="timeline__content">
+              <h3>Program Manager</h3>
+              <span class="timeline__org">Indian Institute of Technology, Bombay · NCETIS</span>
+              <p>Worked on the National Center of Excellence in Technologies for Internal Security (NCETIS) — developing AI-based solutions in consultation with industry and implementing them across government departments.</p>
+            </div>
+          </div>
+
+          <!-- D10X -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Sep 2019 — Jul 2020 · 11 mos</div>
+            <div class="timeline__content">
+              <h3>Project Manager / Scrum Master</h3>
+              <span class="timeline__org">D10X · Pune, India</span>
+              <p>Technology partner for startups — driving quality products delivered fast at fair cost. Owned business analysis, Agile delivery, and retrospectives to help early-stage teams start small and grow.</p>
+            </div>
+          </div>
+
+          <!-- EZMove -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Dec 2014 — Jun 2019 · 4 yrs 7 mos</div>
+            <div class="timeline__content">
+              <h3>Associate Vice President</h3>
+              <span class="timeline__org">EZMove.in (Orane Labs Pvt. Ltd.) · Pune, India</span>
+              <p>Built and scaled a consumer technology venture — leading business analysis, startup operations, product, and growth across a multi-year journey.</p>
+            </div>
+          </div>
+
+          <!-- Natarajan -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Feb 2012 — Sep 2014 · 2 yrs 8 mos</div>
+            <div class="timeline__content">
+              <h3>Project Manager</h3>
+              <span class="timeline__org">Natarajan Education Society · Pune, India</span>
+              <p>Engaged the nation's youth in innovation and entrepreneurship — scouting the best ideas to convert into enterprises and implementing one of India's first online mentorship programs (NESTurnRight.com), plus mobility and skilling programs for budding engineers.</p>
+            </div>
+          </div>
+
+          <!-- ServQual -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Feb 2010 — Feb 2012 · 2 yrs 1 mo</div>
+            <div class="timeline__content">
+              <h3>Director</h3>
+              <span class="timeline__org">ServQual Technologies · Pune, India</span>
+              <p>Led business strategy and technology, alongside coordinating Techpedia.in — building bridges between grassroots innovation and technology.</p>
+            </div>
+          </div>
+
+          <!-- ETH -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker"></div>
+            <div class="timeline__period">Jul 2007 — May 2008 · 11 mos</div>
+            <div class="timeline__content">
+              <h3>Research Associate</h3>
+              <span class="timeline__org">ETH Limited, Pune</span>
+              <p>Researched multi-language computing — developed a prototype for Indic languages and shipped it into a product, and worked on a video-conferencing tool.</p>
+            </div>
+          </div>
+
+          <!-- Honey Bee -->
+          <div class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker timeline__marker--gold"></div>
+            <div class="timeline__period">Oct 2008 — Present · 17+ yrs</div>
             <div class="timeline__content">
               <h3>Volunteer — Innovation Advocate</h3>
-              <span class="timeline__org">Honey Bee Network</span>
-              <p>A crucible of like-minded individuals, innovators, and changemakers.
-                Contributing to grassroots innovation, knowledge sharing, and building
-                a community that empowers inventors and creative problem-solvers across India.</p>
+              <span class="timeline__org">Honey Bee Network · 75+ countries</span>
+              <p>A crucible of innovators, farmers, scholars, and changemakers. Contributing to grassroots innovation, ethical knowledge-sharing, and protecting the IPR of traditional knowledge holders across a global network.</p>
             </div>
           </div>
+        </div>
 
-          <!-- Education -->
-          <div class="timeline__item reveal" data-reveal data-delay="5">
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">2008 — 2012</div>
-            <div class="timeline__content">
-              <h3>Bachelor of Engineering — Information Technology</h3>
-              <span class="timeline__org">Dr. D. Y. Patil Vidyapeeth · Pune</span>
-              <p>Built the technical foundation in Information Technology — rigorous
-                engineering thinking, problem-solving, and a strong base in software
-                development that underpins everything from AI innovation to enterprise consulting.</p>
-            </div>
-          </div>
+        <div class="journey__label journey__label--edu reveal" data-reveal>
+          <span class="journey__labelicon"><i data-lucide="graduation-cap" stroke-width="1.6"></i></span>
+          <h3>Education</h3>
+        </div>
 
-          <div class="timeline__item reveal" data-reveal data-delay="6">
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">2001 — 2004</div>
-            <div class="timeline__content">
-              <h3>10th Standard</h3>
-              <span class="timeline__org">Godavari Hindi School</span>
-              <p>Where the journey began — building the foundational discipline,
-                curiosity, and learning habits that continue to drive lifelong growth.</p>
+        <div class="edu">
+          <article class="edu__card reveal" data-reveal>
+            <div class="edu__icon"><i data-lucide="school" stroke-width="1.5"></i></div>
+            <div class="edu__body">
+              <span class="edu__period">2008 — 2012</span>
+              <h4>Bachelor of Engineering — Information Technology</h4>
+              <span class="edu__org">Dr. D. Y. Patil Vidyapeeth · Pune</span>
+              <p>The technical foundation — rigorous engineering thinking, problem-solving, and a strong base in software development that underpins everything from AI innovation to enterprise consulting.</p>
             </div>
-          </div>
+          </article>
+
+          <article class="edu__card reveal" data-reveal data-delay="1">
+            <div class="edu__icon"><i data-lucide="book-open" stroke-width="1.5"></i></div>
+            <div class="edu__body">
+              <span class="edu__period">2001 — 2004</span>
+              <h4>Secondary Schooling (10th Standard)</h4>
+              <span class="edu__org">Godavari Hindi School</span>
+              <p>Where the journey began — building the foundational discipline, curiosity, and learning habits that continue to drive lifelong growth.</p>
+            </div>
+          </article>
+
+          <article class="edu__card edu__card--wide reveal" data-reveal data-delay="1">
+            <div class="edu__icon"><i data-lucide="badge-check" stroke-width="1.5"></i></div>
+            <div class="edu__body">
+              <span class="edu__period">Ongoing</span>
+              <h4>Continuous Professional Learning</h4>
+              <span class="edu__org">6 AI &amp; Agile certifications · EY · DeepLearning.AI · Lund University · Scrum.org · Scrum Alliance</span>
+              <p>A lifelong learner — extending the academic foundation with industry credentials across Applied AI, the future of work, and Agile leadership. <a href="#certifications" class="edu__link">See certifications &rarr;</a></p>
+            </div>
+          </article>
         </div>
 
         <!-- SKILLS -->
@@ -695,11 +844,42 @@ Identified process optimization and automation opportunities to improve operatio
           <h2 class="section__title reveal" data-reveal>Published <strong>Research</strong>.</h2>
         </div>
         <div class="projects">
-          <!-- Publication 1 -->
+          <!-- Book -->
           <article class="project reveal" data-reveal data-cursor="open">
+            <a href="https://www.igi-global.com/affiliate/ajay-garg/496195" target="_blank" rel="noopener" class="project__link" aria-label="Open IGI Global author profile"></a>
+            <div class="project__media cover cover--book">
+              <span class="cover__ribbon">Book · Author</span>
+              <div class="cover__art"><i data-lucide="book-marked" stroke-width="1.3"></i></div>
+              <span class="cover__kicker">IGI Global Scientific Publishing</span>
+              <h3 class="cover__title">Transforming Education with Data Science in the AI Era</h3>
+              <span class="cover__meta">Sep 2025 — Present</span>
+            </div>
+            <div class="project__body">
+              <div class="project__top">
+                <span class="project__cat">Book · IGI Global</span>
+                <span class="project__year">2025</span>
+              </div>
+              <h3 class="project__title">Transforming Education with Data Science in the AI Era</h3>
+              <p class="project__desc">
+                Unveils how AI and data science are revolutionizing learning for everyone — bringing together cutting-edge strategies in personalized instruction, adaptive assessment, emotion-aware teaching, and generative-AI lesson planning, alongside responsible data practices and blockchain-based credentials.
+              </p>
+              <div class="project__tags">
+                <span>Data Science</span><span>Generative AI</span><span>EdTech</span><span>Responsible AI</span>
+              </div>
+              <span class="project__cta">View author profile
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Publication 1 -->
+          <article class="project reveal" data-reveal data-delay="1" data-cursor="open">
             <a href="https://library.iated.org/view/KUMARGARG2011DIG" target="_blank" rel="noopener" class="project__link" aria-label="Open Digital University Publication"></a>
-            <div class="project__media project__media--edu" style="min-height:180px;">
-              <i data-lucide="book-open" stroke-width="1.2" style="width: 48px; height: 48px; color: rgba(0,0,0,0.2);"></i>
+            <div class="project__media cover cover--edu">
+              <div class="cover__art"><i data-lucide="book-open-text" stroke-width="1.3"></i></div>
+              <span class="cover__kicker">INTED 2011 · Conference Paper</span>
+              <h3 class="cover__title">Digital University</h3>
+              <span class="cover__meta">March 8, 2011</span>
             </div>
             <div class="project__body">
               <div class="project__top">
@@ -713,14 +893,20 @@ Identified process optimization and automation opportunities to improve operatio
               <div class="project__tags">
                 <span>Education</span><span>Technology</span><span>Digital</span>
               </div>
+              <span class="project__cta">Read publication
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
             </div>
           </article>
 
           <!-- Publication 2 -->
-          <article class="project reveal" data-reveal data-delay="1" data-cursor="open">
+          <article class="project reveal" data-reveal data-delay="2" data-cursor="open">
             <a href="https://digitalknowledgecentre.in/listings/font-processor/" target="_blank" rel="noopener" class="project__link" aria-label="Open Font Processor Publication"></a>
-            <div class="project__media project__media--auto" style="min-height:180px;">
-              <i data-lucide="file-text" stroke-width="1.2" style="width: 48px; height: 48px; color: rgba(0,0,0,0.2);"></i>
+            <div class="project__media cover cover--paper">
+              <div class="cover__art"><i data-lucide="file-text" stroke-width="1.3"></i></div>
+              <span class="cover__kicker">INTED 2011, Spain · Conference Paper</span>
+              <h3 class="cover__title">Font Processor</h3>
+              <span class="cover__meta">March 7, 2011</span>
             </div>
             <div class="project__body">
               <div class="project__top">
@@ -734,6 +920,9 @@ Identified process optimization and automation opportunities to improve operatio
               <div class="project__tags">
                 <span>Typography</span><span>Localization</span><span>Hindi/Marathi</span>
               </div>
+              <span class="project__cta">Read publication
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
             </div>
           </article>
         </div>
@@ -747,52 +936,91 @@ Identified process optimization and automation opportunities to improve operatio
           <span class="section__index">Patents</span>
           <h2 class="section__title reveal" data-reveal>Granted <strong>Patents</strong>.</h2>
         </div>
-        <div class="timeline">
+        <div class="patents">
           <!-- Patent 1 -->
-          <div class="timeline__item reveal" data-reveal>
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">Issued May 16, 2025 · 202521032185</div>
-            <div class="timeline__content">
-              <h3>Smart Tire Inflation System</h3>
-              <p>An AI-powered solution to monitor, analyze, and adjust tire pressure automatically using a camera-based vehicle detection system, integrating computer vision, AI processing, and real-time tire pressure monitoring to optimize inflation. <br/><a href="https://drive.google.com/file/d/1QZAdX1_8n6boj_TuKNDOIVoJ_X4PkDO0/view?trk=public_profile_patent-button" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600; margin-top:8px; display:inline-block;">View Patent &rarr;</a></p>
+          <article class="patent reveal" data-reveal data-cursor="open">
+            <a href="https://drive.google.com/file/d/1QZAdX1_8n6boj_TuKNDOIVoJ_X4PkDO0/view" target="_blank" rel="noopener" class="patent__link" aria-label="View Smart Tire Inflation System patent"></a>
+            <div class="patent__cover cover cover--indigo">
+              <span class="cover__badge cover__badge--granted">Granted</span>
+              <div class="cover__art"><i data-lucide="gauge" stroke-width="1.3"></i></div>
             </div>
-          </div>
+            <div class="patent__body">
+              <div class="patent__meta"><span class="patent__no">202521032185</span><span class="patent__date">Issued May 16, 2025</span></div>
+              <h3 class="patent__title">Smart Tire Inflation System</h3>
+              <p class="patent__desc">An AI-powered solution that monitors, analyzes, and adjusts tire pressure automatically using camera-based vehicle detection — integrating computer vision, AI processing, and real-time pressure monitoring to optimize inflation.</p>
+              <span class="project__cta">View patent
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
           <!-- Patent 2 -->
-          <div class="timeline__item reveal" data-reveal>
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">Issued January 18, 2023 · 350722-001</div>
-            <div class="timeline__content">
-              <h3>A NOVEL VERTEX TURBINE</h3>
-              <p>Design Patent. <br/><a href="https://drive.google.com/file/d/1CyhzZjZdG6QnhPcgKgmFsJqVVFIoEwtD/view?trk=public_profile_patent-button" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600; margin-top:8px; display:inline-block;">View Patent &rarr;</a></p>
+          <article class="patent reveal" data-reveal data-delay="1" data-cursor="open">
+            <a href="https://drive.google.com/file/d/1CyhzZjZdG6QnhPcgKgmFsJqVVFIoEwtD/view" target="_blank" rel="noopener" class="patent__link" aria-label="View A Novel Vertex Turbine patent"></a>
+            <div class="patent__cover cover cover--teal">
+              <span class="cover__badge cover__badge--granted">Design Patent</span>
+              <div class="cover__art"><i data-lucide="fan" stroke-width="1.3"></i></div>
             </div>
-          </div>
+            <div class="patent__body">
+              <div class="patent__meta"><span class="patent__no">350722-001</span><span class="patent__date">Issued Jan 18, 2023</span></div>
+              <h3 class="patent__title">A Novel Vertex Turbine</h3>
+              <p class="patent__desc">A granted design patent introducing a novel vertex turbine geometry engineered for improved energy-capture efficiency.</p>
+              <span class="project__cta">View patent
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
           <!-- Patent 3 -->
-          <div class="timeline__item reveal" data-reveal>
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">Issued August 20, 2021 · 202121033752</div>
-            <div class="timeline__content">
-              <h3>I-Health-Care: Technologies Towards 5G Network for Intelligent Health-Care</h3>
-              <p>Using IoT Notification with Machine Learning Programming. <br/><a href="https://drive.google.com/file/d/1Dd7iDQuUFEOb_ZVjmh259qxGD2_Is_4O/view?trk=public_profile_patent-button" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600; margin-top:8px; display:inline-block;">View Patent &rarr;</a></p>
+          <article class="patent reveal" data-reveal data-delay="2" data-cursor="open">
+            <a href="https://drive.google.com/file/d/1Dd7iDQuUFEOb_ZVjmh259qxGD2_Is_4O/view" target="_blank" rel="noopener" class="patent__link" aria-label="View I-Health-Care patent"></a>
+            <div class="patent__cover cover cover--rose">
+              <span class="cover__badge cover__badge--granted">Granted</span>
+              <div class="cover__art"><i data-lucide="heart-pulse" stroke-width="1.3"></i></div>
             </div>
-          </div>
+            <div class="patent__body">
+              <div class="patent__meta"><span class="patent__no">202121033752</span><span class="patent__date">Issued Aug 20, 2021</span></div>
+              <h3 class="patent__title">I-Health-Care · 5G for Intelligent Health-Care</h3>
+              <p class="patent__desc">Technologies towards a 5G network for intelligent health-care using IoT notification combined with machine-learning programming for real-time patient monitoring.</p>
+              <span class="project__cta">View patent
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
           <!-- Patent 4 -->
-          <div class="timeline__item reveal" data-reveal>
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">Issued July 2, 2021 · 202121023739</div>
-            <div class="timeline__content">
-              <h3>Mobile Communication Prank Calls Avoidance</h3>
-              <p>Avoidance of prank calls by Prefixes and Number Formats. <br/><a href="https://drive.google.com/file/d/1PBPlOg-BQtk9Je4C9XVwZ371wpXCx1rk/view?trk=public_profile_patent-button" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600; margin-top:8px; display:inline-block;">View Patent &rarr;</a></p>
+          <article class="patent reveal" data-reveal data-cursor="open">
+            <a href="https://drive.google.com/file/d/1PBPlOg-BQtk9Je4C9XVwZ371wpXCx1rk/view" target="_blank" rel="noopener" class="patent__link" aria-label="View Mobile Communication Prank Calls Avoidance patent"></a>
+            <div class="patent__cover cover cover--gold">
+              <span class="cover__badge cover__badge--granted">Granted</span>
+              <div class="cover__art"><i data-lucide="phone-off" stroke-width="1.3"></i></div>
             </div>
-          </div>
+            <div class="patent__body">
+              <div class="patent__meta"><span class="patent__no">202121023739</span><span class="patent__date">Issued Jul 2, 2021</span></div>
+              <h3 class="patent__title">Mobile Communication Prank Calls Avoidance</h3>
+              <p class="patent__desc">A method to avoid prank and nuisance calls in mobile communication through intelligent use of prefixes and standardized number formats.</p>
+              <span class="project__cta">View patent
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
+
           <!-- Patent 5 -->
-          <div class="timeline__item reveal" data-reveal>
-            <div class="timeline__marker"></div>
-            <div class="timeline__period">Filed June 19, 2025 · 2025/05214</div>
-            <div class="timeline__content">
-              <h3>An Integrated System for Real-Time Sentiment Analysis</h3>
-              <p>Real-Time Sentiment Analysis and Sentiment Reversal of Political News without compromising factual integrity using GPT-3.5 and Streamlit. <br/><a href="https://drive.google.com/file/d/1ya1zI517q4pvLsV-4Dhi8sCVC0Wn5fMl/view?usp=drivesdk&trk=public_profile_patent-button" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600; margin-top:8px; display:inline-block;">View Patent &rarr;</a></p>
+          <article class="patent reveal" data-reveal data-delay="1" data-cursor="open">
+            <a href="https://drive.google.com/file/d/1ya1zI517q4pvLsV-4Dhi8sCVC0Wn5fMl/view?usp=drivesdk" target="_blank" rel="noopener" class="patent__link" aria-label="View Real-Time Sentiment Analysis patent"></a>
+            <div class="patent__cover cover cover--sky">
+              <span class="cover__badge cover__badge--filed">Filed</span>
+              <div class="cover__art"><i data-lucide="newspaper" stroke-width="1.3"></i></div>
             </div>
-          </div>
+            <div class="patent__body">
+              <div class="patent__meta"><span class="patent__no">2025/05214</span><span class="patent__date">Filed Jun 19, 2025</span></div>
+              <h3 class="patent__title">Real-Time Sentiment Analysis of Political News</h3>
+              <p class="patent__desc">An integrated system that analyzes the sentiment of political news in real time and reframes negative narratives positively — preserving factual integrity using NewsAPI, VADER/TextBlob, GPT-3.5, and Streamlit.</p>
+              <span class="project__cta">View patent
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -888,7 +1116,7 @@ Identified process optimization and automation opportunities to improve operatio
     <svg viewBox="0 0 16 16" width="16" height="16"><path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
 
+  <script src="js/icons.js"></script>
   <script src="js/main.js"></script>
-  <script>lucide.createIcons();</script>
 </body>
 </html>

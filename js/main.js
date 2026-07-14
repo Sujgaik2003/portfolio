@@ -263,6 +263,91 @@
   }
 
 
+  /* ─── HERO SMART GALLERY ─── */
+  function initGallery() {
+    const gallery = $('#heroGallery');
+    if (!gallery) return;
+    const slides = $$('.gallery__slide', gallery);
+    const dotsWrap = $('#galleryDots');
+    const prevBtn = $('#galleryPrev');
+    const nextBtn = $('#galleryNext');
+    const n = slides.length;
+    if (n <= 1) return;
+
+    const DURATION = 5000;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let idx = 0;
+    let paused = false;
+    let timer = null;
+
+    // Build dots
+    const dots = slides.map((_, i) => {
+      const b = document.createElement('button');
+      b.className = 'gallery__dot' + (i === 0 ? ' is-active' : '');
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-label', 'Show photo ' + (i + 1) + ' of ' + n);
+      b.addEventListener('click', () => activate(i));
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function restartProgress() {
+      gallery.classList.remove('is-playing');
+      // force reflow so the animation restarts from 0
+      void gallery.offsetWidth;
+      if (!reduce && !paused) gallery.classList.add('is-playing');
+    }
+
+    function scheduleNext() {
+      clearTimeout(timer);
+      if (reduce || paused) return;
+      timer = setTimeout(() => activate(idx + 1), DURATION);
+    }
+
+    function activate(i) {
+      idx = (i + n) % n;
+      slides.forEach((s, k) => s.classList.toggle('is-active', k === idx));
+      dots.forEach((d, k) => d.classList.toggle('is-active', k === idx));
+      restartProgress();
+      scheduleNext();
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => activate(idx - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => activate(idx + 1));
+
+    // Pause on hover
+    gallery.addEventListener('mouseenter', () => {
+      paused = true;
+      clearTimeout(timer);
+      gallery.classList.add('is-paused');
+    });
+    gallery.addEventListener('mouseleave', () => {
+      paused = false;
+      gallery.classList.remove('is-paused');
+      restartProgress();
+      scheduleNext();
+    });
+
+    // Pause when tab hidden
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) { clearTimeout(timer); }
+      else if (!paused) { restartProgress(); scheduleNext(); }
+    });
+
+    // Swipe support (touch)
+    let startX = 0;
+    gallery.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    gallery.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) activate(idx + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+
+    // Kick off
+    activate(0);
+  }
+
+
   /* ─── YEAR IN FOOTER ─── */
   function setYear() {
     const el = $('#year');
@@ -321,6 +406,7 @@
     initCursor();
     initTilt();
     initMagnetic();
+    initGallery();
     setYear();
     // Initial state
     updateScrollProgress();
